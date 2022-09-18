@@ -41,14 +41,12 @@ final class RockPaperScissors {
         final String rock = "rock";
         final String paper = "paper";
         final String scissors = "scissors";
-        final String botplayer = "(botPlayer)";
-
+	final String botplayer = (botPlayer);
         // max number in the Math.Random generator
         final int max = 3;
         final Scanner in = new Scanner(System.in);
         System.out.print("Enter your choice, Rock, Paper, or Scissors: ");
         final String userInput = in.nextLine();
-
         // try and catch for invalid inputs
         if (!userInput.equals(rock) && !userInput.equals(paper)
                     && !userInput.equals(scissors)) {
@@ -64,7 +62,6 @@ final class RockPaperScissors {
             } else if (randomNumber == 2) {
                 botPlayer = scissors;
             }
-
             // program decides if bot, or user wins, using standared
             // Rock, Paper, Scissors rules
             if (userInput.equals(botPlayer)) {
