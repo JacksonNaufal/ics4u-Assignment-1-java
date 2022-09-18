@@ -75,10 +75,7 @@ final class RockPaperScissors {
                 || userInput.equals(scissors) && botPlayer.equals(rock)) {
                 System.out.println("botPlayer Wins!");
                 System.out.println("The bot chose: " + botPlayer);
-            } else if (userInput.equals(paper) && botPlayer.equals(rock)
-                || userInput.equals(scissors) && botPlayer.equals(paper)
-                ||
-                userInput.equals(rock) && botPlayer.equals(scissors)) {
+            } else {
                 System.out.println("User Wins!");
                 System.out.println("The bot played: " + botPlayer);
             }
