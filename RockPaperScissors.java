@@ -83,5 +83,6 @@ final class RockPaperScissors {
                 System.out.println("The bot played: " + botPlayer);
             }
         }
+        System.out.println("\nDone!");
     }
 }
